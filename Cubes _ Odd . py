@@ -1,0 +1,18 @@
+#Cubes of Odd Numbers in a List
+
+size = int(input("Enter the number of elements: "))
+
+numbers = []
+
+for i in range(size):
+    value = int(input(f"Enter element {i + 1}: "))
+    numbers.append(value)
+
+odd_cubes = []
+
+for value in numbers:
+    if value % 2 == 1:
+        odd_cubes.append(value ** 3)
+
+print("\nInput List:", numbers)
+print("Cubes of Odd Numbers:", odd_cubes)
